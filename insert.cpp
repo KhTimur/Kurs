@@ -4,7 +4,7 @@
 using namespace std;
 
 
-void insert(int * begi, int *en)
+void inser(int * begi, int *en)
 {
     for(int *ptr  = begi; ptr != en; ptr++)
         for(int *j=ptr; *j != *begi && *(j-1)>*j;j--)
@@ -26,7 +26,7 @@ int main()
     int nums[] = { 2,9,3,1,5,7 };
     int *begi = std::begin(nums);
     int *en = end(nums);
-    insert(begi, en);
+    inser(begi, en);
     print(begi,en);
     return 0;
 }
