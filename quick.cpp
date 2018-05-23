@@ -25,7 +25,7 @@ int * Partition(  int * left, int * right)
 void quick_sort( int * begi, int * en )
 {
      int const siz = std::distance(begi, en);
-    if (siz>0)
+     if (siz>0)
      {
      int * g=Partition( begi, en);
      quick_sort( begi, g );
@@ -51,9 +51,7 @@ int main()
      int nums[] = { 9,1,7,2,5,8,3,6,4 };
     int *begi = std::begin(nums);
     int *en = end(nums);
-
     quick_sort(begi, en);
-
     print(begi,en);
     return 0;
 }
