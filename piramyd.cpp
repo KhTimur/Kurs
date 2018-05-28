@@ -9,11 +9,11 @@ void downHeap(int * t, int * en) {
     while (k>=t)
     {
         int a=std::distance(t, k);
-        if(*k< *(k+a))
+        if(*k> *(k+a))
             {
                 swap(*k,*(k+a));
             }
-        if(*k<*(k+a+1) && (k+a+1)!=en)
+        if(*k>*(k+a+1) && (k+a+1)!=en)
             {
                 swap(*k,*(k+a+1));
             }
