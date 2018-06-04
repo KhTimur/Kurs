@@ -2,7 +2,6 @@
 #include <algorithm>
 using namespace std;
 
-
 void inplmerg (int* begi, int* middle, int* en)
 {
    int const siz = std::distance(begi, en);
@@ -46,26 +45,9 @@ void merge_sort(int * begi, int *en)
 {
     int const siz = std::distance(begi, en);
     if (siz <= 1) return;
-    int * const middle = std::next(begi, siz / 2);
+    int * const middle = begi+( siz / 2);
     merge_sort(begi, middle);
     merge_sort(middle, en);
     inplmerg(begi, middle, en);
 }
 
-void print(int *begin, int *end)
-{
-    for (int *ptr  = begin; ptr != end; ptr++)
-    {
-        std::cout << *ptr << "   ";
-    }
-}
-
-int main()
-{
-    int nums[] = { 9,3,2,13,7,5,1};
-    int *begi = std::begin(nums);
-    int *en = end(nums);
-    merge_sort(begi, en);
-    print(begi,en);
-    return 0;
-}

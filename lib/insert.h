@@ -1,0 +1,1 @@
+void inser(int *, int *);

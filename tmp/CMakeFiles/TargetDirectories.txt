@@ -1,0 +1,2 @@
+/home/gwaji/Kurs/tmp/lib/CMakeFiles/lib.dir
+/home/gwaji/Kurs/tmp/CMakeFiles/main.dir
