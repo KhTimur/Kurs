@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gwaji/Kurs/sources/insert.cpp
+iostream
+-
+iterator
+-
+
+/home/gwaji/Kurs/sources/merge.cpp
+iostream
+-
+algorithm
+-
+
+/home/gwaji/Kurs/sources/piramyd.cpp
+iostream
+-
+
+/home/gwaji/Kurs/sources/quick.cpp
+iostream
+-
+iterator
+-
+
