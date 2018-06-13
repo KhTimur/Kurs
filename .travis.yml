@@ -61,4 +61,5 @@ before_script:
   - cmake -H. -B_builds -DBUILD_TESTS=ON
 script:
 - cmake --build _builds
-+- cmake --build _builds --target test -- ARGS=--verbose
+- cmake --build _builds --target test -- ARGS=--verbose
+- cmake --build _builds --target test -- ARGS=--verbose
